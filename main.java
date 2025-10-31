@@ -60,11 +60,11 @@ class InterruptController {
     }
 
     public void printLog() {
-        System.out.println("\n========== ISR EXECUTION LOG ==========");
+        System.out.println("\n== ISR ");
         for (String entry : log) {
             System.out.println(entry);
         }
-        System.out.println("=======================================");
+        System.out.println("================");
     }
 }
 
@@ -85,4 +85,5 @@ public class Main {
         Thread.sleep(3000);
         ic.printLog();
     }
+
 }
